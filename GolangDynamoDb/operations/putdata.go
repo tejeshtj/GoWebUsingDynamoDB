@@ -30,8 +30,7 @@ func PutData() {
     // and region from the shared configuration file ~/.aws/config.
     sess, err := session.NewSession(&aws.Config{
 		Region:      aws.String("us-east-2"),
-		Credentials: credentials.NewStaticCredentials("AKIARNVQA3QVTS6ORTOC", "L1dCDoD8jkApCYiOeVnUhU7I82VXpuP4YZSAlsMR", ""),
-	})
+		Credentials: credentials.NewStaticCredentials("access key", "secretkey", ""),	})
 	if(err!=nil){
 		fmt.Println("there is an error getting")
 	}
